@@ -20,14 +20,14 @@ def main():
         while len(current) > 0:
             for i in range(len(current)):
                 link = current.pop(i)
-                driver.get(link)
                 elems = driver.find_elements_by_tag_name('a')
                 for elem in elems:
                     newlink = elem.get_attribute('href')
                     if newlink != None:
-                        if elem not in seen:
-                            seen.append(elem)
-                            current.append(newlink)
+                        if newlink not in seen:
+                            seen.append(newlink)
+                            if "mailto:" not in newlink:
+                                current.append(newlink)
                             if limit:
                                 if limit_term in newlink:
                                     f.write(newlink + "\n")
@@ -40,6 +40,7 @@ def main():
         driver.close()
         f.close()
     except Exception as e:
+        print("Exiting...")
         driver.close()
         f.close()
         print(e)

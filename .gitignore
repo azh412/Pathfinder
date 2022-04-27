@@ -1,2 +1,2 @@
 driver/chromedriver
-tests/*
+out/*
