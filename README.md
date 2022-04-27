@@ -18,4 +18,4 @@ To terminate the program, press `Ctrl+C` to interrupt the process, and the shutd
 
 # Credits
 
-Thanks to @OctoRocket for the idea.
+Thanks to [@OctoRocket](https://github.com/OctoRocket) for the idea.
