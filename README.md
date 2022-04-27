@@ -15,3 +15,7 @@ A bot that searches through all links on a page and follows their links, and so 
 Follow along with the prompts shown when you run the program. It's recommended to store your results in the `out` directory to keep your output files organized.
 
 To terminate the program, press `Ctrl+C` to interrupt the process, and the shutdown procedure will occur.
+
+# Credits
+
+Thanks to @OctoRocket for the idea.
